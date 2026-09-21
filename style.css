@@ -1,0 +1,1239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap');
+
+
+/* =========================
+   IWAH BRAND
+========================= */
+
+:root {
+
+    --purple: #6C3BFF;
+    --purple-dark: #35136F;
+    --purple-deep: #1F0B46;
+    --purple-light: #B89BFF;
+
+    --charcoal: #1A1A1A;
+    --grey: #666666;
+
+    --soft-white: #F6F6F8;
+    --white: #FFFFFF;
+
+}
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family: 'Inter', sans-serif;
+
+    background: var(--white);
+
+    color: var(--charcoal);
+
+    line-height: 1.6;
+
+    overflow-x: hidden;
+
+}
+
+
+h1,
+h2,
+h3 {
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background: rgba(255,255,255,0.96);
+
+    border-bottom: 1px solid #eeeeee;
+
+    backdrop-filter: blur(12px);
+
+}
+
+
+nav {
+
+    max-width: 1300px;
+
+    margin: auto;
+
+    padding: 16px 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.logo {
+
+    width: 145px;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.logo img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    gap: 38px;
+
+}
+
+
+.nav-links a {
+
+    color: var(--charcoal);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    transition: color 0.25s ease;
+
+}
+
+
+.nav-links a:hover {
+
+    color: var(--purple);
+
+}
+
+
+.nav-button {
+
+    background: var(--charcoal);
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 13px 24px;
+
+    border-radius: 50px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+
+}
+
+
+.nav-button:hover {
+
+    background: var(--purple-dark);
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    position: relative;
+
+    max-width: 1300px;
+
+    min-height: 760px;
+
+    margin: auto;
+
+    padding: 80px 30px;
+
+    display: grid;
+
+    grid-template-columns: 1.08fr 0.92fr;
+
+    align-items: center;
+
+    gap: 60px;
+
+}
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 5;
+
+}
+
+
+.eyebrow {
+
+    color: var(--purple);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero h1 {
+
+    font-size: clamp(62px, 7vw, 100px);
+
+    line-height: 0.96;
+
+    letter-spacing: -5px;
+
+    margin-bottom: 32px;
+
+}
+
+
+.hero h1 span {
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #6C3BFF,
+            #4D20C7,
+            #35136F
+        );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+
+}
+
+
+.hero-text {
+
+    max-width: 620px;
+
+    color: var(--grey);
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 38px;
+
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+}
+
+
+.primary-button,
+.secondary-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 16px 30px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+
+}
+
+
+.primary-button {
+
+    background:
+
+        linear-gradient(
+            120deg,
+            #6C3BFF,
+            #4A1FC2
+        );
+
+    color: white;
+
+    box-shadow:
+
+        0 12px 30px
+        rgba(108,59,255,0.22);
+
+}
+
+
+.primary-button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+
+        0 18px 38px
+        rgba(108,59,255,0.32);
+
+}
+
+
+.secondary-button {
+
+    border: 1px solid #cccccc;
+
+    color: var(--charcoal);
+
+}
+
+
+.secondary-button:hover {
+
+    border-color: var(--purple);
+
+    color: var(--purple);
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================================
+   SIGNATURE W AREA
+========================================= */
+
+.hero-signature {
+
+    position: relative;
+
+    height: 520px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: visible;
+
+}
+
+
+/* subtle background */
+
+.signature-background {
+
+    position: absolute;
+
+    width: 470px;
+
+    height: 470px;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(184,155,255,0.18) 0%,
+            rgba(108,59,255,0.06) 42%,
+            transparent 70%
+        );
+
+    animation:
+
+        backgroundPulse
+        5s
+        ease-in-out
+        infinite;
+
+}
+
+
+.signature-circle {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    border:
+
+        1px solid
+        rgba(108,59,255,0.13);
+
+}
+
+
+.circle-one {
+
+    width: 430px;
+
+    height: 180px;
+
+    left: 20px;
+
+    top: 145px;
+
+}
+
+
+.circle-two {
+
+    width: 350px;
+
+    height: 130px;
+
+    left: 60px;
+
+    top: 170px;
+
+}
+
+
+/* =========================================
+   THE SIGNATURE W
+========================================= */
+
+.signature-w {
+
+    position: relative;
+
+    width: 350px;
+
+    height: 310px;
+
+    z-index: 10;
+
+    animation:
+
+        wFloat
+        4.5s
+        ease-in-out
+        infinite;
+
+    filter:
+
+        drop-shadow(
+            0 25px 24px
+            rgba(53,19,111,0.20)
+        );
+
+}
+
+
+/* COMMON RIBBON */
+
+.w-piece {
+
+    position: absolute;
+
+    display: block;
+
+    width: 48px;
+
+    border-radius: 2px;
+
+    background:
+
+        linear-gradient(
+            115deg,
+
+            #C7B2FF 0%,
+
+            #8C62F2 22%,
+
+            #6C3BFF 44%,
+
+            #4B20B5 68%,
+
+            #24104E 100%
+        );
+
+    box-shadow:
+
+        inset 5px 0 8px
+        rgba(255,255,255,0.20),
+
+        inset -7px 0 10px
+        rgba(20,5,55,0.22);
+
+}
+
+
+/* LEFT DESCENDING RIBBON */
+
+.w-one {
+
+    height: 270px;
+
+    left: 62px;
+
+    top: 7px;
+
+    transform:
+
+        rotate(-24deg);
+
+    transform-origin: center;
+
+}
+
+
+/* CENTRE ASCENDING RIBBON */
+
+.w-two {
+
+    height: 224px;
+
+    left: 155px;
+
+    top: 77px;
+
+    transform:
+
+        rotate(-24deg);
+
+    transform-origin: center;
+
+    z-index: 3;
+
+}
+
+
+/* RIGHT ASCENDING RIBBON */
+
+.w-three {
+
+    height: 270px;
+
+    right: 58px;
+
+    top: 7px;
+
+    transform:
+
+        rotate(25deg);
+
+    transform-origin: center;
+
+    z-index: 2;
+
+}
+
+
+/* LIGHT REFLECTION */
+
+.w-piece::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background:
+
+        linear-gradient(
+            90deg,
+
+            rgba(255,255,255,0.28),
+
+            transparent 30%,
+
+            transparent 70%,
+
+            rgba(20,5,55,0.15)
+        );
+
+}
+
+
+/* =========================================
+   W ANIMATION
+========================================= */
+
+@keyframes wFloat {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0);
+
+    }
+
+
+    50% {
+
+        transform:
+            translateY(-15px);
+
+    }
+
+}
+
+
+@keyframes backgroundPulse {
+
+    0%,
+    100% {
+
+        transform:
+            scale(0.96);
+
+        opacity: 0.65;
+
+    }
+
+
+    50% {
+
+        transform:
+            scale(1.06);
+
+        opacity: 1;
+
+    }
+
+}
+
+
+/* HOVER */
+
+.hero-signature:hover .signature-w {
+
+    animation-play-state: paused;
+
+    transform:
+
+        translateY(-8px)
+        scale(1.06);
+
+}
+
+
+/* CAPTION */
+
+.signature-caption {
+
+    position: absolute;
+
+    bottom: 38px;
+
+    color: #8C8298;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+
+    background: var(--soft-white);
+
+    padding: 115px 30px;
+
+}
+
+
+.section-heading {
+
+    max-width: 1200px;
+
+    margin: 0 auto 55px;
+
+}
+
+
+.section-heading h2 {
+
+    font-size: clamp(42px,5vw,68px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+}
+
+
+.service-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 24px;
+
+}
+
+
+.service-card {
+
+    position: relative;
+
+    min-height: 410px;
+
+    background: white;
+
+    padding: 50px;
+
+    border-radius: 24px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+    border: 1px solid #eeeeee;
+
+    transition:
+
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+
+}
+
+
+.service-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+
+        0 25px 60px
+        rgba(26,26,26,0.08);
+
+}
+
+
+.number {
+
+    color: var(--purple);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 55px;
+
+}
+
+
+.service-card h3 {
+
+    font-size: 36px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.service-card p {
+
+    color: var(--grey);
+
+    max-width: 480px;
+
+}
+
+
+.service-card .price {
+
+    margin-top: 25px;
+
+    font-weight: 600;
+
+    color: var(--charcoal);
+
+}
+
+
+.service-card a {
+
+    margin-top: auto;
+
+    padding-top: 30px;
+
+    border-top: 1px solid #eeeeee;
+
+    color: var(--purple);
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+}
+
+
+/* CUSTOM PURPLE CARD */
+
+.purple-card {
+
+    background:
+
+        linear-gradient(
+            145deg,
+
+            #6C3BFF 0%,
+
+            #4A20B5 55%,
+
+            #2B105F 100%
+        );
+
+    color: white;
+
+    border: none;
+
+}
+
+
+.purple-card .number,
+.purple-card p,
+.purple-card .price,
+.purple-card a {
+
+    color: white;
+
+}
+
+
+.purple-card a {
+
+    border-color:
+
+        rgba(255,255,255,0.25);
+
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 130px 30px;
+
+}
+
+
+.about h2 {
+
+    font-size: clamp(42px,5vw,68px);
+
+    line-height: 1.03;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.about > p:last-child {
+
+    max-width: 650px;
+
+    color: var(--grey);
+
+    font-size: 18px;
+
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+
+        linear-gradient(
+            135deg,
+
+            #1A1A1A 0%,
+
+            #21162F 60%,
+
+            #35136F 140%
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 125px 30px;
+
+}
+
+
+.contact::before {
+
+    content: "W";
+
+    position: absolute;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 420px;
+
+    font-weight: 800;
+
+    color:
+
+        rgba(108,59,255,0.05);
+
+    left: 50%;
+
+    top: 50%;
+
+    transform:
+
+        translate(-50%,-50%);
+
+}
+
+
+.contact > * {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.contact .eyebrow {
+
+    color: var(--purple-light);
+
+}
+
+
+.contact h2 {
+
+    font-size: clamp(42px,5vw,68px);
+
+    letter-spacing: -3px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.contact > p:not(.eyebrow) {
+
+    color: #BBBBBB;
+
+    font-size: 18px;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 35px 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.footer-logo {
+
+    width: 110px;
+
+}
+
+
+footer p {
+
+    color: #888888;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 850px) {
+
+    nav {
+
+        padding:
+
+            16px 20px;
+
+    }
+
+
+    .logo {
+
+        width: 115px;
+
+    }
+
+
+    .nav-links {
+
+        display: none;
+
+    }
+
+
+    .nav-button {
+
+        padding:
+
+            10px 16px;
+
+    }
+
+
+    .hero {
+
+        min-height: auto;
+
+        padding:
+
+            70px 20px
+            90px;
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+    }
+
+
+    .hero h1 {
+
+        letter-spacing: -3px;
+
+    }
+
+
+    .hero-signature {
+
+        height: 430px;
+
+    }
+
+
+    .signature-w {
+
+        transform:
+
+            scale(0.85);
+
+    }
+
+
+    .signature-background {
+
+        transform:
+
+            scale(0.82);
+
+    }
+
+
+    .service-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .service-card {
+
+        padding: 38px;
+
+    }
+
+
+    .services,
+    .about,
+    .contact {
+
+        padding:
+
+            85px 20px;
+
+    }
+
+
+    footer {
+
+        padding:
+
+            30px 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .hero h1 {
+
+        font-size: 52px;
+
+    }
+
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+    }
+
+
+    .primary-button,
+    .secondary-button {
+
+        width: 100%;
+
+    }
+
+
+    .hero-signature {
+
+        height: 360px;
+
+        transform:
+
+            scale(0.78);
+
+    }
+
+}
